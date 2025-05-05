@@ -1,4 +1,4 @@
-import * as schema from "@/db-schema";
+import * as schema from "./infra/db/schema";
 import { createDatabase } from "./infra/db";
 import { createCloudflareEnv } from "./infra/cf-env";
 import { createAuth } from "./infra/auth";
