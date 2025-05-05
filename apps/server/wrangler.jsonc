@@ -1,0 +1,6 @@
+{
+  "name": "vocabulary-teacher-api",
+  "compatibility_date": "2025-05-04",
+  "main": "src/index.ts",
+  "compatibility_flags": ["nodejs_compat"],
+}

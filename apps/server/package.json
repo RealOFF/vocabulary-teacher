@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "dev": "wrangler dev",
+    "start": "node dist/src/index.js",
+    "db:local": "turso dev --db-file local.db",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "format": "prettier --write .",
+    "lint:fix": "eslint ./src --fix",
+    "lint": "eslint ./src",
+    "cf:types": "wrangler types"
+  },
+  "dependencies": {
+    "better-auth": "^1.2.7",
+    "drizzle-orm": "^0.38.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "drizzle-kit": "^0.30.5",
+    "typescript": "^5.8.2",
+    "wrangler": "^4.14.1"
+  }
+}
